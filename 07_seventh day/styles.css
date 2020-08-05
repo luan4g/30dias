@@ -26,11 +26,11 @@ body {
 }
 
 .squares:nth-child(2) {
-  animation-delay: 0.5s;
+  animation-delay: 0.7s;
 }
 
 .squares:nth-child(1) {
-  animation-delay: 1s;
+  animation-delay: 1.4s;
 }
 
 @keyframes squares {
