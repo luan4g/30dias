@@ -1,0 +1,58 @@
+body {
+  margin: 0%;
+  padding: 0%;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+
+  background-color: #222;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  padding: 16px;
+  position: relative;
+  background: transparent;
+  border: 5px solid #666;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: "Anton", sans-serif;
+  color: #fff;
+}
+
+button::before, button::after {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 5px;
+  background-color: #222;
+  transform: skew(50deg);
+  transition: 1s;
+}
+
+button::before {
+  top: -5px;
+  left: 10%;
+}
+
+button::after {
+  bottom: -5px;
+  right: 10%;
+}
+
+button:hover::before {
+  top: -5px;
+  left: 80%;
+  transform: skew(-50deg);
+}
+
+button:hover::after {
+  bottom: -5px;
+  right: 80%;
+  transform: skew(-50deg);
+}
